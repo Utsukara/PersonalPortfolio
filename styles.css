@@ -7,21 +7,21 @@ body {
     display: none;
 }
 
-.toggle-label {
+.toggle-tab, .close-tab {
     position: fixed;
     top: 20px;
     left: 250px; /* Just outside the sidebar */
-    font-size: 20px;
+    width: 10px; /* Thickness of the tab */
+    height: 42px; /* Length of the tab */
     background-color: #111;
-    border: none;
-    color: white;
     cursor: pointer;
-    padding: 10px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     z-index: 1000;
     transition: left 0.3s;
 }
 
-.toggle-sidebar:checked ~ .toggle-label {
+.toggle-sidebar:checked ~ .toggle-tab {
     left: 0;
 }
 
@@ -49,18 +49,6 @@ body {
     background-color: #575757;
 }
 
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: -30px; /* Just outside the sidebar */
-    font-size: 20px;
-    background-color: #111;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px 15px;
-}
-
 .toggle-sidebar:checked ~ .sidebar {
     width: 0;
     padding-top: 0;
@@ -68,7 +56,7 @@ body {
 }
 
 .toggle-sidebar:checked ~ .sidebar a, 
-.toggle-sidebar:checked ~ .sidebar .close-btn {
+.toggle-sidebar:checked ~ .sidebar .close-tab {
     display: none;
 }
 
@@ -82,6 +70,20 @@ body {
     margin-left: 0;
 }
 
-.toggle-sidebar:not(:checked) ~ .toggle-label {
+.toggle-sidebar:not(:checked) ~ .toggle-tab {
     display: block;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
