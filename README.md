@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio(Start with index.html to navigate properly).
 
 Welcome to my professional portfolio website. This platform is designed to provide a comprehensive overview of my skills, experiences, and academic achievements in the field of cybersecurity. It features a sidebar navigation that allows for easy access to various sections, including my Resumé, projects, skills, certifications, and contact information.
 
