@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    font-size: larger;
+    font-size: 20px;
     margin: 0;
     background-color: rgb(40, 51, 49);
     color: rgb(255, 255, 255);
@@ -157,18 +157,18 @@ link:hover {
 
 h1 {
     color: rgb(122, 84, 180);
-    font-size: 4em;
+    font-size: 75px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for depth */
 }
 
 h2 {
     color: rgb(122, 84, 180);
-    font-size: 3em;
+    font-size: 60px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for depth */
 }
 
 h3 {
     color: rgb(122, 84, 180);
-    font-size: 2em;
+    font-size: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for depth */
 }
