@@ -3,12 +3,10 @@
 Welcome to my professional portfolio website. This platform is designed to provide a comprehensive overview of my skills, experiences, and academic achievements in the field of cybersecurity. It features a sidebar navigation that allows for easy access to various sections, including my Resumé, projects, skills, certifications, and contact information.
 
 Website Features
-Home Page: An introduction to my background and professional journey.
+Home Page: An introduction to my background and professional journey and also a funny little interactive photo that does something if you click on it.
 About Me: Detailed information about my academic and professional background.
 Resumé: An in-depth look at my education, work experience, and skills.
 Projects: Showcase of my completed and ongoing projects.
-Skills: A list of my technical skills and proficiencies.
-Certifications: Information on my professional certifications.
 Contact Info: Ways to get in touch with me for professional opportunities.
 Technology Stack
 HTML: For the basic structure of the website.
