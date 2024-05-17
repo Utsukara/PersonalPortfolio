@@ -13,17 +13,62 @@
     <div id="sidebar" class="sidebar">
         <label for="toggle-sidebar" class="close-tab"></label>
         <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="cv.html">Resumé</a>
+        <a href="cv.html">Résumé</a>
         <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact Info</a>
     </div>
 
     <div id="main-content" class="main-content">
-        <h1>Welcome to My Professional Portfolio.</h1>
-        <p>I am James Parker, and I have created this platform to offer a comprehensive overview of my skills, experiences, and accomplishments. Here, you will find detailed information about my background, capabilities, and contact information. I invite you to explore the various sections to assess my qualifications and reach out for potential collaborations or opportunities.</p>
+        <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>
+            Welcome to my professional portfolio. I am James Parker, a dedicated Master's student in Cybersecurity at DePaul University, building upon a solid foundation in Neuroscience from the University of Chicago Illinois. My academic journey has equipped me with a deep understanding of systems, data structures, and information security management, which I have further enhanced through practical experiences.
+        </p>
+        <p>
+            From a young age, I have been fascinated by technology, but it wasn't until recently that I realized its potential as a career. Witnessing the increasing importance of tech in our world, I embraced this passion and transitioned into cybersecurity. My experiences as an ER Technician at Gottlieb Memorial Hospital and a Research Assistant at UIC Language Lab have honed my skills in data analysis, critical thinking, and problem-solving, all of which are crucial in the field of cybersecurity.
+        </p>
     </div>
+    
+    <footer>
+        <p>Chicago, IL</p>
+        <p><a href="https://www.linkedin.com/in/jsparker-ms">LinkedIn</a></p>
+        <p>James Parker</p>
+        <p><a href="mailto:jsparker.ms@gmail.com">jsparker.ms@gmail.com</a></p>
+        <p>(Phone Number)</p>
+    </footer>
+
+    <audio id="hover-sound" src="music.mp3"></audio> <!-- Add your music file here -->
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            
+            sidebar.classList.toggle('hidden');
+            mainContent.classList.toggle('expanded');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const profilePic = document.getElementById('profile-pic');
+            const hoverSound = document.getElementById('hover-sound');
+            let isPlaying = false;
+
+            profilePic.addEventListener('click', () => {
+                if (isPlaying) {
+                    hoverSound.pause();
+                    hoverSound.currentTime = 0;
+                    isPlaying = false;
+                    profilePic.classList.remove('spinning');
+                } else {
+                    hoverSound.play().then(() => {
+                        isPlaying = true;
+                        profilePic.classList.add('spinning');
+                    }).catch((error) => {
+                        console.error('Failed to play music', error);
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
