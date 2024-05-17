@@ -87,3 +87,8 @@ body {
 .right {
     text-align: right;
 }
+
+body{
+    background-color: rgb(20, 31, 29);
+    color: rgb(194, 237, 210);
+}
